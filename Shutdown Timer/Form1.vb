@@ -83,8 +83,8 @@ Public Class Form1
     End Sub
     Dim Time As Integer
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-
-
+        'Shell("Shutdown", 0)
+        'Process.Start("cmd.exe", "dir")
         Time = (ComboBox2.SelectedIndex + 1) * 60
         If Timer2.Enabled = 0 Then
             Timer2.Start()
@@ -92,6 +92,7 @@ Public Class Form1
             If CheckBox1.Checked Then
                 TurnOffLCD()
             End If
+            'Threading.Thread.Sleep(3000)
             Me.WindowState = FormWindowState.Minimized
         End If
 
@@ -102,17 +103,23 @@ Public Class Form1
         Label1.Text = "System will " + ComboBox1.Text + " after " + Time.ToString() + " Seconds."
         If Time = 0 Then
             If ComboBox1.SelectedIndex = 0 Then
-                Process.Start("shutdown", "/s /hybrid /t 00")
+                'Process.Start("shutdown", "/s /hybrid /t 00")
+                Shell("Shutdown /s /hybrid /t 00", 0)
             ElseIf ComboBox1.SelectedIndex = 1 Then
-                Process.Start("shutdown", "/s /t 00")
+                'Process.Start("shutdown", "/s /t 00")
+                Shell("Shutdown /s /t 00", 0)
             ElseIf ComboBox1.SelectedIndex = 2 Then
-                Process.Start("shutdown", "/s /f /t 00")
+                'Process.Start("shutdown", "/s /f /t 00")
+                Shell("Shutdown /s /f /t 00", 0)
             ElseIf ComboBox1.SelectedIndex = 3 Then
-                Process.Start("shutdown", "/r /t 00")
+                'Process.Start("shutdown", "/r /t 00")
+                Shell("Shutdown /r /t 00", 0)
             ElseIf ComboBox1.SelectedIndex = 4 Then
-                Process.Start("shutdown", "/r /f /t 00")
+                'Process.Start("shutdown", "/r /f /t 00")
+                Shell("Shutdown /r /f /t 00", 0)
             ElseIf ComboBox1.SelectedIndex = 5 Then
-                Process.Start("shutdown")
+                'Process.Start("shutdown","/l")
+                Shell("Shutdown /l", 0)
             End If
             Me.Close()
         End If

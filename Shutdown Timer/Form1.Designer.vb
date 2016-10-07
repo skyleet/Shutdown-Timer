@@ -60,9 +60,11 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.ComboBox1)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Font = New System.Drawing.Font("Palatino Linotype", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
+        Me.GroupBox1.Location = New System.Drawing.Point(16, 15)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(585, 100)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(764, 123)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Schedule Action"
@@ -71,9 +73,10 @@ Partial Class Form1
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Palatino Linotype", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(507, 29)
+        Me.Label7.Location = New System.Drawing.Point(676, 36)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(64, 20)
+        Me.Label7.Size = New System.Drawing.Size(80, 26)
         Me.Label7.TabIndex = 6
         Me.Label7.Text = "Minutes"
         '
@@ -83,9 +86,10 @@ Partial Class Form1
         Me.CheckBox1.Checked = Global.Shutdown_Timer.My.MySettings.Default.IsChecked
         Me.CheckBox1.DataBindings.Add(New System.Windows.Forms.Binding("Checked", Global.Shutdown_Timer.My.MySettings.Default, "IsChecked", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         Me.CheckBox1.Font = New System.Drawing.Font("Palatino Linotype", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox1.Location = New System.Drawing.Point(226, 73)
+        Me.CheckBox1.Location = New System.Drawing.Point(301, 90)
+        Me.CheckBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(15, 14)
+        Me.CheckBox1.Size = New System.Drawing.Size(18, 17)
         Me.CheckBox1.TabIndex = 5
         Me.CheckBox1.UseVisualStyleBackColor = True
         '
@@ -95,9 +99,10 @@ Partial Class Form1
         Me.Label5.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Label5.Font = New System.Drawing.Font("Palatino Linotype", 11.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.Black
-        Me.Label5.Location = New System.Drawing.Point(25, 69)
+        Me.Label5.Location = New System.Drawing.Point(33, 85)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(195, 20)
+        Me.Label5.Size = New System.Drawing.Size(244, 26)
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "And Turn Monitor Off Now"
         '
@@ -109,9 +114,10 @@ Partial Class Form1
         Me.ComboBox2.Font = New System.Drawing.Font("Palatino Linotype", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox2.FormattingEnabled = True
         Me.ComboBox2.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "101", "102", "103", "104", "105", "106", "107", "108", "109", "110", "111", "112", "113", "114", "115", "116", "117", "118", "119", "120"})
-        Me.ComboBox2.Location = New System.Drawing.Point(376, 26)
+        Me.ComboBox2.Location = New System.Drawing.Point(501, 32)
+        Me.ComboBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ComboBox2.Name = Global.Shutdown_Timer.My.MySettings.Default.cmb
-        Me.ComboBox2.Size = New System.Drawing.Size(122, 28)
+        Me.ComboBox2.Size = New System.Drawing.Size(161, 34)
         Me.ComboBox2.TabIndex = 3
         Me.ComboBox2.Text = Global.Shutdown_Timer.My.MySettings.Default.Time
         '
@@ -119,9 +125,10 @@ Partial Class Form1
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Palatino Linotype", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(327, 29)
+        Me.Label4.Location = New System.Drawing.Point(436, 36)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(43, 20)
+        Me.Label4.Size = New System.Drawing.Size(55, 26)
         Me.Label4.TabIndex = 2
         Me.Label4.Text = "After"
         '
@@ -132,9 +139,10 @@ Partial Class Form1
         Me.ComboBox1.Font = New System.Drawing.Font("Palatino Linotype", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"Shutdown(Hybrid)", "Shutdown", "Shutdown(Forced)", "Restart", "Restart(Forced)", "Log Off"})
-        Me.ComboBox1.Location = New System.Drawing.Point(119, 26)
+        Me.ComboBox1.Location = New System.Drawing.Point(159, 32)
+        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(202, 28)
+        Me.ComboBox1.Size = New System.Drawing.Size(268, 34)
         Me.ComboBox1.TabIndex = 1
         Me.ComboBox1.Text = Global.Shutdown_Timer.My.MySettings.Default.Action
         '
@@ -142,9 +150,10 @@ Partial Class Form1
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Palatino Linotype", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(6, 29)
+        Me.Label3.Location = New System.Drawing.Point(8, 36)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(107, 20)
+        Me.Label3.Size = New System.Drawing.Size(134, 26)
         Me.Label3.TabIndex = 0
         Me.Label3.Text = "System should"
         '
@@ -152,9 +161,11 @@ Partial Class Form1
         '
         Me.GroupBox2.Controls.Add(Me.Label6)
         Me.GroupBox2.Font = New System.Drawing.Font("Palatino Linotype", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox2.Location = New System.Drawing.Point(12, 118)
+        Me.GroupBox2.Location = New System.Drawing.Point(16, 145)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(585, 56)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox2.Size = New System.Drawing.Size(764, 69)
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Current Time"
@@ -163,18 +174,20 @@ Partial Class Form1
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Palatino Linotype", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(181, 24)
+        Me.Label6.Location = New System.Drawing.Point(241, 30)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(113, 22)
+        Me.Label6.Size = New System.Drawing.Size(136, 27)
         Me.Label6.TabIndex = 3
         Me.Label6.Text = "Current Time"
         '
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Palatino Linotype", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(388, 199)
+        Me.Button1.Location = New System.Drawing.Point(489, 233)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(85, 30)
+        Me.Button1.Size = New System.Drawing.Size(113, 37)
         Me.Button1.TabIndex = 3
         Me.Button1.Text = "Cancel"
         Me.Button1.UseVisualStyleBackColor = True
@@ -182,9 +195,10 @@ Partial Class Form1
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Palatino Linotype", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(496, 199)
+        Me.Button2.Location = New System.Drawing.Point(633, 233)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(86, 30)
+        Me.Button2.Size = New System.Drawing.Size(115, 37)
         Me.Button2.TabIndex = 4
         Me.Button2.Text = "OK"
         Me.Button2.UseVisualStyleBackColor = True
@@ -195,9 +209,10 @@ Partial Class Form1
         Me.Label2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Label2.Font = New System.Drawing.Font("Palatino Linotype", 11.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.Blue
-        Me.Label2.Location = New System.Drawing.Point(18, 209)
+        Me.Label2.Location = New System.Drawing.Point(24, 244)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(138, 20)
+        Me.Label2.Size = New System.Drawing.Size(173, 26)
         Me.Label2.TabIndex = 5
         Me.Label2.Text = "Sunil Kumar Yadav"
         '
@@ -213,9 +228,10 @@ Partial Class Form1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Palatino Linotype", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(13, 181)
+        Me.Label1.Location = New System.Drawing.Point(17, 223)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(0, 20)
+        Me.Label1.Size = New System.Drawing.Size(0, 26)
         Me.Label1.TabIndex = 6
         '
         'NotifyIcon1
@@ -229,33 +245,34 @@ Partial Class Form1
         '
         'ContextMenuStrip1
         '
+        Me.ContextMenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OpenToolStripMenuItem, Me.AboutToolStripMenuItem, Me.ExitToolStripMenuItem})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(108, 70)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(120, 76)
         '
         'OpenToolStripMenuItem
         '
         Me.OpenToolStripMenuItem.Name = "OpenToolStripMenuItem"
-        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(107, 22)
+        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(119, 24)
         Me.OpenToolStripMenuItem.Text = "Open"
         '
         'AboutToolStripMenuItem
         '
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(107, 22)
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(119, 24)
         Me.AboutToolStripMenuItem.Text = "About"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(107, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(119, 24)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(609, 242)
+        Me.ClientSize = New System.Drawing.Size(793, 292)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Button2)
@@ -263,6 +280,7 @@ Partial Class Form1
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.Name = "Form1"
         Me.Text = "Shutdown Timer by SKY"
